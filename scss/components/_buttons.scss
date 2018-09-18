@@ -1,0 +1,23 @@
+.dark-btn {
+    @include button(black, 100px);
+}
+
+.error-btn {
+    @include button(red, 100px);
+}
+
+.success-btn {
+    @include button(#bada55, 100px);
+}
+
+.dark-btn-lg {
+    @include button(black, 200px);
+}
+
+.error-btn-lg {
+    @include button(red, 200px);
+}
+
+.success-btn-lg {
+    @include button(#bada55, 200px);
+}

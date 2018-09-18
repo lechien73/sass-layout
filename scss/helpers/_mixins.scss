@@ -1,0 +1,26 @@
+@mixin button($color, $size) {
+    
+    $height: $size / 2;
+    $fontsize: $size / 5;
+    $padding: ($size / 4) - ($fontsize / 2);
+    
+    width: $size;
+    height: $height;
+    font-size: pxToRem($fontsize);
+    border-radius: 5px;
+    text-align: center;
+    background-color: $color;
+    padding-top: $padding;
+    box-sizing: border-box;
+    
+    @if $color==black {
+        color: white;
+    }
+    @else {
+        color: gray;
+    }
+    
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+}
